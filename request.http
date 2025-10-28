@@ -1,0 +1,3 @@
+### Test Audit Log Retrieval
+POST http://localhost:4004/odata/v4/audit-log/retrieveAuditLogs
+Content-Type: application/json

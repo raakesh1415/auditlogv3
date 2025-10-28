@@ -1,0 +1,24 @@
+{
+  "name": "auditlog",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "dependencies": {
+    "@cap-js/hana": "^2",
+    "@sap-cloud-sdk/http-client": "^4.1.2",
+    "@sap/cds": "^9.4.3",
+    "axios": "^1.12.2",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "googleapis": "^164.1.0",
+    "nodemailer": "^7.0.9",
+    "sap-cf-mailer": "^0.0.5"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "private": true,
+  "cds": {}
+}
