@@ -6,7 +6,7 @@ async function convertToText(auditLogData) {
     console.log('---Start of Converting JSON Audit Logs to Text Format---');
     
     try {
-        const RECORDS_PER_FILE = 8000; // one txt file with 8000 records (file size around 21 MB)
+        const RECORDS_PER_FILE = 8000; // one txt file with 8000 records (file size around 20 MB)
         const totalRecords = auditLogData.length;
         const numberOfFiles = Math.ceil(totalRecords / RECORDS_PER_FILE);
         const filePaths = [];
