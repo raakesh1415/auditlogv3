@@ -6,6 +6,7 @@
     "@sap-cloud-sdk/connectivity": "^4.1.2",
     "@sap-cloud-sdk/http-client": "^4.1.2",
     "@sap/cds": "^9.4.3",
+    "@sap/jobs-client": "^1.8.6",
     "@sap/xsenv": "^5",
     "@sap/xssec": "^4",
     "express": "^4.21.2",
