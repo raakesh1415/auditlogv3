@@ -38,6 +38,7 @@ async function retrieveAuditLogs() {
             const records = response.data || [];
             console.log(`Page ${pageNumber}: Retrieved ${records.length} records`);
             allAuditLogs.push(...records);
+           console.log(`Total records so far: ${allAuditLogs.length}`);
 
             // Check if a next page handle exists
             const pagingHeader = response.headers?.paging;

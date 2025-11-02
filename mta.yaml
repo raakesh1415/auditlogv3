@@ -60,3 +60,5 @@ resources:
     parameters:
       service: jobscheduler
       service-plan: standard
+      config:
+        enable-xsuaa-support: true

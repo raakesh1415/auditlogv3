@@ -39,17 +39,18 @@ async function sendEmail(textFilePath) {
                     }
                 ]
             });
-
-            console.log(`Email ${totalFiles} sent successfully`);
+            
+            console.log(`Email ${i + 1} sent successfully`); 
 
             // Clean up the temp file after sending
             try {
-                fs.unlinkSync(textFilePath);
-                console.log('Temporary file cleaned up');
+                fs.unlinkSync(filePath);
+                console.log(`Temporary file ${i + 1} deleted`);
             } catch (cleanupError) {
                 console.warn('Could not delete temporary file:', cleanupError.message);
             }
         }
+        console.log(`Email ${totalFiles} sent successfully`);
         console.log('---End Sending Email---');
 
         return [`Email sent successfully with audit log report attachments (Total ${totalFiles} emails)`];

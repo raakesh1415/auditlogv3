@@ -16,8 +16,8 @@ module.exports = (srv) => {
         
         const result = await sendEmail(textFilePath);
         
-        if (!isJob) {
+        // if (!isJob) {
             return result;
-        }
+        // }
     });
 }

@@ -1,5 +1,13 @@
 {
-  "scopes": [],
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.auditlogJobScheduler",
+      "description": "Scope for Aduit Log Retrieval Job Scheduler",
+      "grant-as-authority-to-apps": [
+        "$XSSERVICENAME(auditlog-job-scheduler)"
+      ]
+    }
+  ],
   "attributes": [],
   "role-templates": []
 }
