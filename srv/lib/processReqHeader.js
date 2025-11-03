@@ -13,8 +13,7 @@ async function processReqHeader(req) {
         isJob = true;
         if (req._.req.res) {
             var res = req._.req.res;
-            // res.setHeader('Content-Type', 'text/plain;charset=utf-8');
-            res.setHeader('Content-Type', 'application/json');
+            res.setHeader('Content-Type', 'text/plain;charset=utf-8');
             await res.status(202).send('Accepted async job, but long-running operation still running.');
         }
     } else {

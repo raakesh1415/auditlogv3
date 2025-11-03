@@ -34,8 +34,5 @@ mta_archives/
 @cds-models
 
 
-# Ignore environment and certificate files
-.env
-mtls-certificate.pem
-mtls-private-key.pem
+# Ignore get-refresh-token for gdrive
 get-refresh-token.js

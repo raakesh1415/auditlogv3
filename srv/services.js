@@ -3,6 +3,7 @@ const retrieveAuditLogs = require('./lib/retrieveAuditLogs');
 const convertToText = require('./lib/convertToText');
 const uploadToDrive = require('./lib/uploadToDrive');
 const sendEmail = require('./lib/sendEmail');
+const updateScheduler = require('./lib/updateScheduler');
 
 module.exports = (srv) => {
     srv.on('retrieveAuditLogs', async (req) => {
@@ -16,8 +17,10 @@ module.exports = (srv) => {
         
         const result = await sendEmail(textFilePath);
         
-        // if (!isJob) {
+        if (isJob) {
+            await updateScheduler(result, req.headers);
+        } else {
             return result;
-        // }
+        }
     });
 }
